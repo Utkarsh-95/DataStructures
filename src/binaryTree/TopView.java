@@ -17,7 +17,6 @@ import node.BinaryNode;
  */
 public class TopView {
 
-//    Tree root
     BinaryNode root;
 
     TreeMap<Integer, Integer> tm = new TreeMap<>();
