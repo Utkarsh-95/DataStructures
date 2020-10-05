@@ -48,8 +48,7 @@ public class LeftRotate {
         int n = arr.length;
         int d = 2;
 
-        // in case the rotating factor is 
-        // greater than array length 
+        // in case the rotating factor is greater than array length 
         d = d % n;
         leftRotate(arr, d); // Rotate array by d 
         printArray(arr);

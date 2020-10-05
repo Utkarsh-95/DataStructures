@@ -63,6 +63,6 @@ public class TopView {
 
         tree.topView(level, tree.root);
 
-        tree.tm.values().stream().forEach((x) -> System.out.print(x + " - "));
+        tree.tm.values().stream().forEach((x) -> System.out.print(x + "  "));
     }
 }
