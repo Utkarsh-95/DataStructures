@@ -54,7 +54,7 @@ public class TopView {
         /* creating a binary tree and entering the nodes */
         TopView tree = new TopView();
         tree.root = new BinaryNode(1);
-        tree.root.left = new BinaryNode(2);
+        tree.root.setLeft(new BinaryNode(2));
         tree.root.setRight(new BinaryNode(3));
         tree.root.getRight().setLeft(new BinaryNode(5));
         tree.root.getRight().setRight(new BinaryNode(4));

@@ -61,10 +61,10 @@ public class BinaryTreeDiameter {
         /* creating a binary tree and entering the nodes */
         BinaryTreeDiameter tree = new BinaryTreeDiameter();
         tree.root = new BinaryNode(1);
-        tree.root.left = new BinaryNode(2);
+        tree.root.setRight(new BinaryNode(2));
         tree.root.setRight(new BinaryNode(3));
-        tree.root.left.left = new BinaryNode(4);
-        tree.root.left.setRight(new BinaryNode(5));
+        tree.root.getLeft().setLeft(new BinaryNode(4));
+        tree.root.getLeft().setRight(new BinaryNode(5));
 
         System.out.println("The diameter of given binary tree is : " + tree.diameter());
     }

@@ -4,7 +4,7 @@ public class BinaryNode {
 
     private int value;
     private int height;
-    public BinaryNode left;
+    private BinaryNode left;
     private BinaryNode right;
 
     public BinaryNode() {

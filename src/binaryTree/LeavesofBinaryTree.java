@@ -29,7 +29,7 @@ public class LeavesofBinaryTree {
             return -1;
         }
 
-        int left = helper(list, root.left);
+        int left = helper(list, root.getLeft());
         int right = helper(list, root.getRight());
         int currentNode = Math.max(left, right) + 1;
 
@@ -48,10 +48,10 @@ public class LeavesofBinaryTree {
         /* creating a binary tree and entering the nodes */
         LeavesofBinaryTree tree = new LeavesofBinaryTree();
         tree.root = new BinaryNode(1);
-        tree.root.left = new BinaryNode(2);
+        tree.root.setLeft(new BinaryNode(2));
         tree.root.setRight(new BinaryNode(3));
-        tree.root.left.left = new BinaryNode(4);
-        tree.root.left.setRight(new BinaryNode(5));
+        tree.root.getLeft().setLeft(new BinaryNode(4));
+        tree.root.getLeft().setRight(new BinaryNode(5));
 
         System.out.println("The leaves of given binary tree is : " + tree.findLeaves(tree.root));
     }

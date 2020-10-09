@@ -41,7 +41,7 @@ public class RightView {
         /* creating a binary tree and entering the nodes */
         RightView tree = new RightView();
         tree.root = new BinaryNode(1);
-        tree.root.left = new BinaryNode(2);
+        tree.root.setLeft(new BinaryNode(2));
         tree.root.setRight(new BinaryNode(3));
         tree.root.getRight().setLeft(new BinaryNode(5));
         tree.root.getRight().setRight(new BinaryNode(4));
@@ -50,6 +50,8 @@ public class RightView {
 
         tree.rightView(level, tree.root);
 
-        tree.tm.values().stream().forEach(System.out::println);
+        tree.tm.values().stream().forEach(x -> {
+            System.out.print(x + " ");
+        });
     }
 }

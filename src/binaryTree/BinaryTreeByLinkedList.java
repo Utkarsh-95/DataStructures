@@ -93,11 +93,11 @@ public class BinaryTreeByLinkedList {
 
     public void deleteDeepest(BinaryNode root, int level, BinaryNode parent, int todelete) {
         if (root != null) {
-            deleteDeepest(root.left, level + 1, root, todelete);
+            deleteDeepest(root.getLeft(), level + 1, root, todelete);
             deleteDeepest(root.getRight(), level + 1, root, todelete);
             if (level > deepestlevel && root.getLeft() == null && root.getRight() == null && root.getValue() == todelete) {
 
-                if (root == parent.left) {
+                if (root == parent.getLeft()) {
                     parent.setLeft(null);
                 } else {
                     parent.setRight(null);
