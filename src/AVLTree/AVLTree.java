@@ -18,19 +18,19 @@ public class AVLTree {
 
     // Insert values in AVL Tree
     void insert(int value) {
-        root = insert(root, value);
+        root = hepler_insert(root, value);
     }// end of method
 
     // Helper Method
-    BinaryNode insert(BinaryNode currentNode, int value) {
+    BinaryNode hepler_insert(BinaryNode currentNode, int value) {
         // THIS ELSE_IF BLOCK IS BST CONDITION
         if (currentNode == null) {
             System.out.println("Successfully inserted " + value + " in AVL Tree");
             return createNewNode(value);
         } else if (value <= currentNode.getValue()) {
-            currentNode.setLeft(insert(currentNode.getLeft(), value));
+            currentNode.setLeft(hepler_insert(currentNode.getLeft(), value));
         } else {
-            currentNode.setRight(insert(currentNode.getRight(), value));
+            currentNode.setRight(hepler_insert(currentNode.getRight(), value));
         }
 
         // THIS IS WHERE WE WILL DO AVL SPECIFIC WORK

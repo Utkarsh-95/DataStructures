@@ -56,8 +56,8 @@ public class TopView {
         tree.root = new BinaryNode(1);
         tree.root.setLeft(new BinaryNode(2));
         tree.root.setRight(new BinaryNode(3));
-        tree.root.getRight().setLeft(new BinaryNode(5));
-        tree.root.getRight().setRight(new BinaryNode(4));
+        tree.root.getRight().setLeft(new BinaryNode(4));
+        tree.root.getRight().setRight(new BinaryNode(5));
         tree.root.getRight().getLeft().setRight(new BinaryNode(6));
         tree.root.getRight().getLeft().getRight().setLeft(new BinaryNode(7));
 

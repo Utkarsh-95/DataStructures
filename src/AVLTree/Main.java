@@ -19,24 +19,24 @@ public class Main {
         tree.insert(1);
 
         tree.levelOrderTraversal();
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
         tree.deleteNodeOfBST(5);//LL Condition
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
         tree.insert(2);
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
         tree.deleteNodeOfBST(4);//LR Condition
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
         tree.insert(20);
         tree.deleteNodeOfBST(65);//RR Condition
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
         tree.insert(40);
         tree.deleteNodeOfBST(20);//RL Condition
-        tree.printTreeGraphically();
+//        tree.printTreeGraphically();
 
     }// end of method
 }// end of class
