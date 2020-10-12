@@ -21,7 +21,7 @@ public class RightViewRecursive {
     private void rightView(int level, BinaryNode node) {
 
         if (node == null) {
-            System.out.println(node);
+//            System.out.println(node + "_" + level);
             return;
         }
 

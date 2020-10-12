@@ -4,12 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/BSTGreaterSum.java</file>
-            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/TopView.java</file>
+            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/array/MaxTripletSum.java</file>
             <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/DeepestNode.java</file>
-            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/array/LeftRotate.java</file>
-            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/RightView.java</file>
+            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binarySearchTree/BSTInsertion.java</file>
+            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/SymmetryBinaryTree.java</file>
+            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/BinaryTreeDiameter.java</file>
             <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/LeftLeafSum.java</file>
             <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/HeightOfTree.java</file>
+            <file>file:/E:/Proj/Design%20Patterns/DataStructuresLearning/src/binaryTree/LeavesNodeCount.java</file>
         </group>
     </open-files>
 </project-private>

@@ -58,7 +58,7 @@ public class LeftLeafSum {
         tree.root.getRight().setLeft(new BinaryNode(5));
         tree.root.getRight().setRight(new BinaryNode(7));
         tree.root.getRight().getRight().setRight(new BinaryNode(8));
-        tree.root.getLeft().setLeft(new BinaryNode(0));
+        tree.root.getLeft().setLeft(new BinaryNode(9));
         tree.root.getLeft().setRight(new BinaryNode(2));
         tree.root.getLeft().getRight().setRight(new BinaryNode(3));
 

@@ -23,9 +23,7 @@ public class BSTGreaterSum {
     BinaryNode root;
 
     Map<Integer, Integer> hm = new HashMap<>();
-
     ArrayList<Integer> al = new ArrayList<>();
-
     int sum = 0;
 
     private void bstSum(BinaryNode node) {

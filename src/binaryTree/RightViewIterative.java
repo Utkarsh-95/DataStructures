@@ -30,10 +30,9 @@ public class RightViewIterative {
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            // number of nodes at current level 
+            // number of nodes at current level
             int n = queue.size();
 
-            // Traverse all nodes of current level  
             for (int i = 1; i <= n; i++) {
                 BinaryNode currentNode = queue.poll();
 

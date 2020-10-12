@@ -27,8 +27,7 @@ public class DetectLoopLinkedList {
     }
 
     public void push(int new_data) {
-        /* 1 & 2: Allocate the Node &
-				Put in the data*/
+        /* 1 & 2: Allocate the Node & Put in the data*/
         Node new_node = new Node(new_data);
 
         /* 3. Make next of new Node as head */
@@ -39,25 +38,24 @@ public class DetectLoopLinkedList {
     }
 
     // Returns true if there is a loop in linked list else returns false.
-    static boolean detectLoop(Node h) {
+    static boolean detectLoop(Node node) {
         HashSet<Node> hs = new HashSet<>();
-        while (h != null) {
+        while (node != null) {
             // If we have already has this node in hashmap it means their is a cycle
             // (Because you we encountering the node second time).
-            if (hs.contains(h)) {
+            if (hs.contains(node)) {
                 return true;
             }
 
             // If we are seeing the node for the first time, insert it in hashset
-            hs.add(h);
+            hs.add(node);
 
-            h = h.next;
+            node = node.next;
         }
 
         return false;
     }
 
-    /* Driver program to test above function */
     public static void main(String[] args) {
         DetectLoopLinkedList llist = new DetectLoopLinkedList();
 
