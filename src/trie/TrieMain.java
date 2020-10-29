@@ -4,7 +4,7 @@ public class TrieMain {
 
     public static void main(String[] args) {
         Trie t = new Trie();
-
+        //Testing Trie data structures
         //CASE#1
         t.insert("bcde");
         t.insert("bckg");
