@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayListLinkedList {
+    
+//    Tests
 
     public static void main(String[] args) {
         /*
