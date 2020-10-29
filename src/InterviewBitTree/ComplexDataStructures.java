@@ -16,13 +16,13 @@ public class ComplexDataStructures {
 
     public static void main(String[] args) {
 
-        Map<String, Set<String>> personnel = new HashMap<String, Set<String>>();
+        Map<String, Set<String>> personnel = new HashMap<>();
 
         for (int i = 0; i < vehicles.length; i++) {
             String vehicle = vehicles[i];
             String[] driversList = drivers[i];
 
-            Set<String> driverSet = new LinkedHashSet<String>();
+            Set<String> driverSet = new LinkedHashSet<>();
 
             for (String driver : driversList) {
                 driverSet.add(driver);

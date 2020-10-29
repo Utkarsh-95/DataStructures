@@ -1,46 +1,47 @@
 package node;
 
 public class BinaryNodeWithParent {
-	private int value;
-	private BinaryNodeWithParent parent;
-	private BinaryNodeWithParent left;
-	private BinaryNodeWithParent right;
-	
-	public int getValue() {
-		return value;
-	}
 
-	public void setValue(int value) {
-		this.value = value;
-	}
+    private int value;
+    private BinaryNodeWithParent parent;
+    private BinaryNodeWithParent left;
+    private BinaryNodeWithParent right;
 
-	public BinaryNodeWithParent getParent() {
-		return parent;
-	}
+    public int getValue() {
+        return value;
+    }
 
-	public void setParent(BinaryNodeWithParent parent) {
-		this.parent = parent;
-	}
+    public void setValue(int value) {
+        this.value = value;
+    }
 
-	public BinaryNodeWithParent getLeft() {
-		return left;
-	}
+    public BinaryNodeWithParent getParent() {
+        return parent;
+    }
 
-	public void setLeft(BinaryNodeWithParent left) {
-		this.left = left;
-	}
+    public void setParent(BinaryNodeWithParent parent) {
+        this.parent = parent;
+    }
 
-	public BinaryNodeWithParent getRight() {
-		return right;
-	}
+    public BinaryNodeWithParent getLeft() {
+        return left;
+    }
 
-	public void setRight(BinaryNodeWithParent right) {
-		this.right = right;
-	}
+    public void setLeft(BinaryNodeWithParent left) {
+        this.left = left;
+    }
 
-	@Override
-	public String toString() {
-		return value+"";
-	}
+    public BinaryNodeWithParent getRight() {
+        return right;
+    }
+
+    public void setRight(BinaryNodeWithParent right) {
+        this.right = right;
+    }
+
+    @Override
+    public String toString() {
+        return value + "";
+    }
 
 }

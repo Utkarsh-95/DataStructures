@@ -55,8 +55,10 @@ public class RightViewRecursive {
             System.out.print(" " + x.getKey() + "," + x.getValue() + " ");
         });
 
-//        tree.tm.values().stream().forEach(x -> {
-//            System.out.print(x + " ");
-//        });
+        System.out.println();
+
+        tree.tm.values().stream().forEach(x -> {
+            System.out.print(x + " ");
+        });
     }
 }

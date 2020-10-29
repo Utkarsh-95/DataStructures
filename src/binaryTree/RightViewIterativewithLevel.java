@@ -5,7 +5,6 @@ package binaryTree;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import binaryTree.*;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -66,7 +65,6 @@ public class RightViewIterativewithLevel {
 //        tree.tm.entrySet().stream().forEach(x -> {
 //            System.out.print(" " + x.getKey() + "," + x.getValue() + " ");
 //        });
-
         tree.tm.values().stream().forEach(x -> {
             System.out.print(x + " ");
         });
