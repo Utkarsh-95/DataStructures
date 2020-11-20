@@ -105,7 +105,7 @@ public class BinaryFormat {
     void levelOrderZigZag() {
 
         Stack<BinaryNode> parentstack = new Stack<>();
-        parentstack.add(root);
+        parentstack.push(root);
 
         List<List<Integer>> parentList = new ArrayList<>();
         List<Integer> childList = new ArrayList<>();

@@ -95,7 +95,6 @@ public class ReverseLinkedList {
 //        System.out.println("");
 //        System.out.println("Reversed linked list Iteratively");
 //        list.printList(head);
-
 //        head = list.reverseRecursively(head);
 //        System.out.println("");
 //        System.out.println("Reversed linked list Recursively");

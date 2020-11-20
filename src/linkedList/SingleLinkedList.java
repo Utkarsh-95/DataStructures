@@ -21,6 +21,31 @@ public class SingleLinkedList {
         return head;
     }
 
+    public SingleNode rotateLinkedList(int d) {
+
+        SingleNode temp = head;
+        SingleNode prev = null;
+
+        Queue<SingleNode> q = new LinkedList<>();
+
+        while (temp != null) {
+            q.add(temp);
+            prev = temp;
+            temp = temp.getNext();
+        }
+
+        while (d != 0) {
+            SingleNode t = q.poll();
+            prev.setNext(t);
+            head = head.getNext();
+            t.setNext(null);
+            prev = prev.getNext();
+            d--;
+        }
+
+        return head;
+    }
+
     public void insertInLinkedList(int nodeValue, int location) {
         SingleNode node = new SingleNode();
         node.setValue(nodeValue);
@@ -156,30 +181,4 @@ public class SingleLinkedList {
     public void setSize(int size) {
         this.size = size;
     }
-
-    public SingleNode rotateLinkedList(int d) {
-
-        SingleNode temp = head;
-        SingleNode prev = null;
-
-        Queue<SingleNode> q = new LinkedList<>();
-        
-        while (temp != null) {
-            q.add(temp);
-            prev = temp;
-            temp = temp.getNext();
-        }
-
-        while (d != 0) {
-            SingleNode t = q.poll();
-            prev.setNext(t);
-            head = head.getNext();
-            t.setNext(null);
-            prev = prev.getNext();
-            d--;
-        }
-
-        return head;
-    }
-
 }
